@@ -2,7 +2,13 @@
 # platform :ios, '6.0'
 
 target 'feverestival2015' do
-
+	pod 'ChameleonFramework'
+	pod 'ObjectiveSugar'
+	pod 'SASlideMenu'
+	pod 'SGActionView'
+	pod 'DZNSegmentedControl'
+	pod 'Masonry'
+    pod 'MBProgressHUD'
 end
 
 target 'feverestival2015Tests' do

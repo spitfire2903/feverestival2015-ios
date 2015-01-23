@@ -15,6 +15,7 @@
 		70CBD4081A71C5EE0011EDFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70CBD4071A71C5EE0011EDFB /* Images.xcassets */; };
 		70CBD40B1A71C5EE0011EDFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70CBD4091A71C5EE0011EDFB /* LaunchScreen.xib */; };
 		70CBD4171A71C5EE0011EDFB /* feverestival2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4161A71C5EE0011EDFB /* feverestival2015Tests.m */; };
+		8B22168C895088715C4967FA /* libPods-feverestival2015.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB911F95D9051FBC8AFB96 /* libPods-feverestival2015.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D31BDE661ABCEC7E2205696 /* Pods-feverestival2015.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feverestival2015.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feverestival2015/Pods-feverestival2015.debug.xcconfig"; sourceTree = "<group>"; };
+		4288C7F0AA3EF74B74F5F935 /* Pods-feverestival2015.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feverestival2015.release.xcconfig"; path = "Pods/Target Support Files/Pods-feverestival2015/Pods-feverestival2015.release.xcconfig"; sourceTree = "<group>"; };
+		4EAB911F95D9051FBC8AFB96 /* libPods-feverestival2015.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-feverestival2015.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CBD3F41A71C5EE0011EDFB /* feverestival2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feverestival2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CBD3F81A71C5EE0011EDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70CBD3F91A71C5EE0011EDFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B22168C895088715C4967FA /* libPods-feverestival2015.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22AA8319262F513A6D947EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EAB911F95D9051FBC8AFB96 /* libPods-feverestival2015.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70CBD3EB1A71C5EE0011EDFB = {
 			isa = PBXGroup;
 			children = (
 				70CBD3F61A71C5EE0011EDFB /* feverestival2015 */,
 				70CBD4131A71C5EE0011EDFB /* feverestival2015Tests */,
 				70CBD3F51A71C5EE0011EDFB /* Products */,
+				CACE889F2C47917EE9E7B2FB /* Pods */,
+				22AA8319262F513A6D947EA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +137,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CACE889F2C47917EE9E7B2FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D31BDE661ABCEC7E2205696 /* Pods-feverestival2015.debug.xcconfig */,
+				4288C7F0AA3EF74B74F5F935 /* Pods-feverestival2015.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70CBD41A1A71C5EE0011EDFB /* Build configuration list for PBXNativeTarget "feverestival2015" */;
 			buildPhases = (
+				E98C84FCC3717880A1C050AB /* Check Pods Manifest.lock */,
 				70CBD3F01A71C5EE0011EDFB /* Sources */,
 				70CBD3F11A71C5EE0011EDFB /* Frameworks */,
 				70CBD3F21A71C5EE0011EDFB /* Resources */,
+				DD2682159FC7A817685D74E9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD2682159FC7A817685D74E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-feverestival2015/Pods-feverestival2015-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E98C84FCC3717880A1C050AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70CBD3F01A71C5EE0011EDFB /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		70CBD41B1A71C5EE0011EDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D31BDE661ABCEC7E2205696 /* Pods-feverestival2015.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = feverestival2015/Info.plist;
@@ -357,6 +417,7 @@
 		};
 		70CBD41C1A71C5EE0011EDFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4288C7F0AA3EF74B74F5F935 /* Pods-feverestival2015.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = feverestival2015/Info.plist;
@@ -418,6 +479,7 @@
 				70CBD41C1A71C5EE0011EDFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70CBD41D1A71C5EE0011EDFB /* Build configuration list for PBXNativeTarget "feverestival2015Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				70CBD41F1A71C5EE0011EDFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
