@@ -7,7 +7,12 @@
 //
 
 #import "BaseViewController.h"
+#import "Model/Event.h"
+#import "Model/MyCalendar.h"
+#import <SASlideMenu/SASlideMenuViewController.h>
+#import <SASlideMenu/SASlideMenuDataSource.h>
+#import <SASlideMenu/SASlideMenuDelegate.h>
 
-@interface MenuViewController : BaseViewController
+@interface MenuViewController : SASlideMenuViewController<SASlideMenuDataSource,SASlideMenuDelegate>
 
 @end

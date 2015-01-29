@@ -8,6 +8,15 @@
 
 #import "MeetingPointTableViewCell.h"
 
+@interface MeetingPointTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UILabel *lblPlace;
+@property (weak, nonatomic) IBOutlet UILabel *lblDateTime;
+@property (weak, nonatomic) IBOutlet UILabel *lblPromotion;
+
+@end
+
 @implementation MeetingPointTableViewCell
 
 - (void)awakeFromNib {
@@ -18,6 +27,18 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setEventObj:(Event *)eventObj{
+
+    _eventObj = eventObj;
+    
+    // Inverti a ordem pois tem lugares que nao vao haver shows
+    self.lblName.text = eventObj.place;
+    self.lblPlace.text = eventObj.name;
+    self.lblDateTime.text = [NSString stringWithFormat:@"%@ - %@", [eventObj dateStr], [eventObj timeStr]];
+    self.lblPromotion.text = eventObj.summary;
+
 }
 
 @end

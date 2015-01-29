@@ -7,16 +7,32 @@
 //
 
 #import "ExhibitionViewController.h"
+#import "EventManager.h"
+#import "ExhibitionTableViewCell.h"
+#import "ExhibitionInfoViewController.h"
+
+static NSString* const EXHIBITION_CELL_IDENTIFIER = @"exhibitionCell";
+static NSString* const EXHIBITION_INFO_SEGUE = @"exhibitionInfoSegue";
 
 @interface ExhibitionViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) NSArray* eventList;
+@property (nonatomic) Event* selectedEvent;
 
 @end
 
 @implementation ExhibitionViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.eventList = [EventManager exhibitions];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +40,47 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Segue methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([[segue identifier] isEqualToString:EXHIBITION_INFO_SEGUE]) {
+        
+        ExhibitionInfoViewController *info = [segue destinationViewController];
+        info.eventObj = self.selectedEvent;
+    }
 }
-*/
+
+#pragma mark - tableViewDelegate
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ExhibitionTableViewCell *cell = nil;
+    Event* event = nil;
+    
+    cell = [tableView dequeueReusableCellWithIdentifier:EXHIBITION_CELL_IDENTIFIER];
+    
+    if(!cell){
+        cell = [[ExhibitionTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:EXHIBITION_CELL_IDENTIFIER];
+    }
+    
+    event = [self.eventList objectAtIndex:indexPath.row];
+    
+    [cell setEventObj:event];
+    
+    return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.eventList count];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    self.selectedEvent = [self.eventList objectAtIndex:indexPath.row];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self performSegueWithIdentifier:EXHIBITION_INFO_SEGUE sender:self];
+}
+
 
 @end

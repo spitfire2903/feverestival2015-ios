@@ -1,4 +1,4 @@
-﻿[{"place":"Almanaque Café","address":"Avenida Albino José Barbosa de Oliveira, 1240","phone":"(19) 3249-0014","site":"www.almanaquecafe.com.br"},
+﻿{"foodPlaces":[{"place":"Almanaque Café","address":"Avenida Albino José Barbosa de Oliveira, 1240","phone":"(19) 3249-0014","site":"www.almanaquecafe.com.br"},
 {"place":"Andanças Gourmet, Bar e Restaurante","address":"Rua Agostinho Pátaro, 124","phone":"(19) 3368-1125","site":"www.andancasbar.com.br"},
 {"place":"Bagdá Cozinha Árabe","address":"Avenida Santa Isabel, 233","phone":"(19) 3289-0541 (19) 3289-1842","site":"www.bagdacafe.com.br"},
 {"place":"Bar do Jair","address":"Rua Eduardo Modesto, 212","phone":"(19) 3326-2903","site":"www.bardojair.com.br"},
@@ -16,4 +16,4 @@
 {"place":"Raízes Zen Alimentos Vegetarianos","address":"Rua Antonio Pierozzi, 94","phone":"(19) 3305-2667 (19) 3288-0581","site":"www.raizeszen.com.br"},
 {"place":"Restaurante Varanda da Vila","address":"Avenida Santa Isabel,1030","phone":"(19) 3289-2732","site":"www.varandadavila.com.br"},
 {"place":"Valise de Cronópio","address":"Rua Francisco de Barros Filho, 426","phone":"(19) 3289-0028","site":"www.valisedecronopio.com.br"},
-{"place":"Vitalidade Restaurante & Café","address":"Av. Professor Atílio Martini, 190","phone":"(19) 3327-0602","site":"www.facebook.com/vitalidaderestaurante"}]
+ {"place":"Vitalidade Restaurante & Café","address":"Av. Professor Atílio Martini, 190","phone":"(19) 3327-0602","site":"www.facebook.com/vitalidaderestaurante"}]}

@@ -7,8 +7,19 @@
 //
 
 #import "SpecialsInfoViewController.h"
+#import "EventManager.h"
 
 @interface SpecialsInfoViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UILabel *lblPlace;
+@property (weak, nonatomic) IBOutlet UILabel *lblDateTime;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblContent;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addEvent;
 
 @end
 
@@ -19,19 +30,48 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    NSString* content = nil;
+    
+    if (self.eventObj) {
+        if ([EventManager isEventFavorited:self.eventObj]) {
+            self.navigationItem.rightBarButtonItem = nil;
+        }
+        
+        [self setTitle:self.eventObj.vacancys];
+        
+        self.lblName.text = self.eventObj.name;
+        self.lblPlace.text = self.eventObj.place;
+        self.lblDateTime.text = [NSString stringWithFormat:@"%@ - %@", [self.eventObj dateStr], [self.eventObj timeStr]];
+        
+        content = self.eventObj.summary;
+        
+        
+        if (self.eventObj.sheet && self.eventObj.sheet.length > 0) {
+            content = [content stringByAppendingFormat:@"\n\nFicha Técnica:\n%@", self.eventObj.sheet];
+        }
+        
+        if (self.eventObj.duration && self.eventObj.duration.length > 0) {
+            content = [content stringByAppendingFormat:@"\n\nDuração: %@", self.eventObj.duration];
+        }
+        
+        if (self.eventObj.rating && self.eventObj.rating.length > 0) {
+            content = [content stringByAppendingFormat:@"\n\nFaixa Etária: %@", self.eventObj.rating];
+        }
+        
+        self.lblContent.text = content;
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)addEventToMyCalendar:(id)sender {
+    [EventManager setEventFavorited:self.eventObj isFavorited:YES];
+    self.navigationItem.rightBarButtonItem = nil;
 }
-*/
-
 @end

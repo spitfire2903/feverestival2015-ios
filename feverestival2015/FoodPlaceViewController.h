@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface FoodPlaceViewController : BaseViewController
+@interface FoodPlaceViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

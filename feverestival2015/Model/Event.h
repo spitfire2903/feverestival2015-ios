@@ -30,7 +30,7 @@ typedef enum {
     EVENT_CATEGORY_GENERAL
 } EventCategory;
 
-@interface EventOld : NSManagedObject
+@interface Event : NSManagedObject
 
 @property (nonatomic, retain) NSNumber * eventId;
 @property (nonatomic, retain) NSString * name;

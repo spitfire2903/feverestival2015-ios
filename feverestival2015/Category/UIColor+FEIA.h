@@ -13,13 +13,6 @@
 +(UIColor*)colorWithHexString:(NSString*)hex;
 +(UIColor*)colorwithR:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha;
 
-+ (UIColor *) dancingColor;
-+ (UIColor *) musicColor;
-+ (UIColor *) visualArtsColor;
-+ (UIColor *) performingArtsColor;
-+ (UIColor *) medialogyColor;
-+ (UIColor *) generalColor;
-+ (UIColor *) creditsColor;
-+ (UIColor *) partyColor;
++ (UIColor *) feverPurple;
 
 @end

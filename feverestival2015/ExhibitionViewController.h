@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ExhibitionViewController : BaseViewController
+@interface ExhibitionViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

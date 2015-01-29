@@ -8,6 +8,15 @@
 
 #import "WorkshopTableViewCell.h"
 
+@interface WorkshopTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UILabel *lblPlace;
+@property (weak, nonatomic) IBOutlet UILabel *lblDateTime;
+
+@end
+
+
 @implementation WorkshopTableViewCell
 
 - (void)awakeFromNib {
@@ -18,6 +27,15 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setEventObj:(Event *)eventObj{
+    
+    _eventObj = eventObj;
+    
+    self.lblName.text = eventObj.name;
+    self.lblPlace.text = eventObj.place;
+    self.lblDateTime.text = eventObj.sheet;
 }
 
 @end

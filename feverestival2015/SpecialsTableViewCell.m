@@ -8,6 +8,14 @@
 
 #import "SpecialsTableViewCell.h"
 
+@interface SpecialsTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UILabel *lblCategory;
+@property (weak, nonatomic) IBOutlet UILabel *lblDateTime;
+
+@end
+
 @implementation SpecialsTableViewCell
 
 - (void)awakeFromNib {
@@ -18,6 +26,16 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(void)setEventObj:(Event *)eventObj{
+    
+    _eventObj = eventObj;
+    
+    self.lblName.text = eventObj.name;
+    // FIXME: pog
+    self.lblCategory.text = eventObj.vacancys;
+    self.lblDateTime.text = [NSString stringWithFormat:@"%@ - %@", [eventObj dateStr], [eventObj timeStr]];
 }
 
 @end

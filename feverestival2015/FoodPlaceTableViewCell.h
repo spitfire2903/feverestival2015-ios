@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FoodPlace.h"
 
 @interface FoodPlaceTableViewCell : UITableViewCell
+
+@property (nonatomic) FoodPlace* foodPlace;
 
 @end

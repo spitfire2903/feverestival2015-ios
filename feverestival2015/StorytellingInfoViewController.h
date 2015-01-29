@@ -7,7 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import "Event.h"
 
 @interface StorytellingInfoViewController : BaseViewController
 
+@property (nonatomic) Event* eventObj;
 @end

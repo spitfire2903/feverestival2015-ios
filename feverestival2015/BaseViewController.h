@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <ChameleonFramework/Chameleon.h>
 
 @interface BaseViewController : UIViewController
+
+-(void)showLoading;
+
+-(void)hideLoading;
 
 @end

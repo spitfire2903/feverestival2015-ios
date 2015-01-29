@@ -8,6 +8,14 @@
 
 #import "ExhibitionTableViewCell.h"
 
+@interface ExhibitionTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UILabel *lblCategory;
+@property (weak, nonatomic) IBOutlet UILabel *lblDateTimePlace;
+
+@end
+
 @implementation ExhibitionTableViewCell
 
 - (void)awakeFromNib {
@@ -16,8 +24,18 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
+}
+
+-(void)setEventObj:(Event *)eventObj{
+    
+    _eventObj = eventObj;
+    
+    self.lblName.text = eventObj.name;
+    // FIXME: pog
+    self.lblCategory.text = eventObj.vacancys;
+    self.lblDateTimePlace.text = [NSString stringWithFormat:@"(%@ %@) %@", [eventObj dateStr], [eventObj timeStr], eventObj.place];
 }
 
 @end

@@ -7,6 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "Category/UIColor+FEIA.h"
+#import <ChameleonFramework/Chameleon.h>
+#import "FoodManager.h"
+#import "EventManager.h"
+
+NSString* const FOOD_ENTITY = @"FoodPlace";
+NSString* const EVENT_ENTITY = @"Event";
+NSString* const CALENDAR_ENTITY = @"MyCalendar";
 
 @interface AppDelegate ()
 
@@ -15,8 +23,30 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+ 
+    [[UINavigationBar appearance] setBarTintColor:[UIColor flatPurpleColorDark]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                            nil]];
+
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor]
+                                                           } forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+    
+    // [FoodManager clearData];
+    //[EventManager clearData];
+    [FoodManager generateFoodPlaces];
+    [EventManager generateMeetingPoints];
+    [EventManager generateWorkshops];
+    [EventManager generateSpecials];
+    [EventManager generateStorytellings];
+    [EventManager generateExhibition];
+    
     return YES;
 }
 

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Event.h"
 
 @interface MyCalendarTableViewCell : UITableViewCell
+
+@property (nonatomic) Event* eventObj;
 
 @end

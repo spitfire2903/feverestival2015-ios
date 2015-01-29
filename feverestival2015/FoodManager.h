@@ -10,4 +10,10 @@
 
 @interface FoodManager : NSObject
 
++(NSArray*)foodPlaces;
+
++(BOOL)clearData;
+
++(BOOL)generateFoodPlaces;
+
 @end

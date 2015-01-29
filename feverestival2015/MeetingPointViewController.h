@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface MeetingPointViewController : BaseViewController
+@interface MeetingPointViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

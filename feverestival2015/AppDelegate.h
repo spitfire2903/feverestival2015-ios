@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+extern NSString* const FOOD_ENTITY;
+extern NSString* const EVENT_ENTITY;
+extern NSString* const CALENDAR_ENTITY;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

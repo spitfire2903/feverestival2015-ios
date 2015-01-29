@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface WorkshopViewController : BaseViewController
+@interface WorkshopViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

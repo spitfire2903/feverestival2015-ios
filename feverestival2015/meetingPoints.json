@@ -1,4 +1,4 @@
-﻿[{"date":"30/01/2015","time":"20.00","place":"Borda Brasil ","summary":"Samba Esporte Fino","promotion":"Entrada R$ 7,00 *"},
+﻿{"events":[{"date":"30/01/2015","time":"20.00","place":"Borda Brasil ","summary":"Samba Esporte Fino","promotion":"Entrada R$ 7,00 *"},
 {"date":"31/01/2015","time":"21.30","place":"Casa São Jorge","summary":"Ieda Cruz e Cozinha da Bebete + DJ Digão + Fotos de Juliana Hilal","promotion":"Pizza média por R$ 20,00 *"},
 {"date":"01/02/2015","time":"21.30","place":"Echos Studio Bar","summary":"Quinteto Neblina e Paula D' Ajello","promotion":"Entrada R$ 15,00 *"},
 {"date":"02/02/2015","time":"21.30","place":"Andanças Gourmet, Bar e Restaurante","summary":"","promotion":"Entrada Livre *"},
@@ -12,5 +12,5 @@
 {"date":"10/02/2015","time":"21.30","place":"Bar do Jair","summary":"Thiago Carvalho e Paulo Moraes","promotion":"Ganha um chope (promoção facebook) *"},
 {"date":"11/02/2015","time":"21.30","place":"Casa São Jorge","summary":"Tatiana Rocha","promotion":"Entrada R$ 5,00 *"},
 {"date":"12/02/2015","time":"21.30","place":"Echos Studio Bar","summary":"Balé Barbárie","promotion":"Entrada R$ 7,00 *"},
-{"date":"13/02/2015","time":"18.00","place":"Praça do Coco","summary":"Festa de Encerramento com DJ Digão","promotion":"Entrada: R$ 8,00 / na compra de 3 chopes só paga 2 *"}]
+           {"date":"13/02/2015","time":"18.00","place":"Praça do Coco","summary":"Festa de Encerramento com DJ Digão","promotion":"Entrada: R$ 8,00 / na compra de 3 chopes só paga 2 *"}]}
 

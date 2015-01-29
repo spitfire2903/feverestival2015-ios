@@ -9,6 +9,7 @@ target 'feverestival2015' do
 	pod 'DZNSegmentedControl'
 	pod 'Masonry'
     pod 'MBProgressHUD'
+    pod 'FormatterKit'
 end
 
 target 'feverestival2015Tests' do

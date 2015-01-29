@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Ricardo Nunes de Miranda. All rights reserved.
 //
 
-#import "EventOld.h"
+#import "Event.h"
 
 
-@implementation EventOld
+@implementation Event
 
 @dynamic eventId;
 @dynamic name;
@@ -38,11 +38,18 @@
 
 -(NSString *)timeStr{
     NSDateFormatter* formatter = nil;
+    NSString* result = nil;
     
     formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"HH:mm"];
     
-    return [formatter stringFromDate:self.time];
+    if (self.time) {
+        result = [formatter stringFromDate:self.time];
+    } else{
+        result = @"";
+    }
+    
+    return result;
 }
 
 @end

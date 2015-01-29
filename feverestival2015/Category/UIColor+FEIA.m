@@ -70,51 +70,8 @@
     return [UIColor colorWithRed:r green:g blue:b alpha:alpha];
 }
 
-+ (UIColor *) dancingColor{
-    return [self colorWithHexString:@"ED2459"];
-    //return [self colorWithHexString:@"#d73027"];
++ (UIColor *) feverPurple{
+    return [self colorWithHexString:@"74478E"];
 }
-
-
-+ (UIColor *) musicColor{
-    return [self colorWithHexString:@"B5353B"];
-    //return [self colorWithHexString:@"#fc8d59"];
-}
-
-
-+ (UIColor *) visualArtsColor{
-    return [self colorWithHexString:@"DB5727"];
-    //return [self colorWithHexString:@"#238443"/*@"#fee090"*/];
-}
-
-
-+ (UIColor *) performingArtsColor{
-    return [self colorWithHexString:@"782014"];
-    //return [self colorWithHexString:@"#91bfdb"];
-}
-
-
-+ (UIColor *) medialogyColor{
-    return [self colorWithHexString:@"AB5333"];
-    //return [self colorWithHexString:@"#4575b4"];
-}
-
-+ (UIColor *) generalColor{
-    return [self colorWithHexString:@"EDB83B"];
-}
-
-+ (UIColor *) creditsColor{
-    return [self colorWithHexString:@"A8AB8A"];
-}
-
-+ (UIColor *) partyColor{
-    return [self colorWithHexString:@"BA4A4A"];
-    //return [self colorWithHexString:@"523E44"];
-}
-
-/*
- #d73027    #fc8d59    #fee090
- #e0f3f8    #91bfdb    #4575b4
-*/
 
 @end

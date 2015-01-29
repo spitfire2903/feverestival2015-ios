@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "Category/UIColor+FEIA.h"
 
 @interface BaseViewController ()
 
@@ -24,6 +25,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return [ChameleonStatusBar statusBarStyleForColor:[UIColor feverPurple]];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -33,5 +38,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)showLoading{
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+}
+
+-(void)hideLoading{
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+}
 
 @end

@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface MyCalendarViewController : BaseViewController
+@interface MyCalendarViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

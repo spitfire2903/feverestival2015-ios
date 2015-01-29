@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+#import "Event.h"
 
 @interface ExhibitionInfoViewController : BaseViewController
+
+@property (nonatomic) Event* eventObj;
 
 @end

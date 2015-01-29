@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface StorytellingViewController : BaseViewController
+@interface StorytellingViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end
