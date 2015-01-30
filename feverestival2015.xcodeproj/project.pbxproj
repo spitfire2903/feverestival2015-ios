@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7042CC661A7A9C020024D40A /* StorytellingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042CC651A7A9C020024D40A /* StorytellingTableViewCell.m */; };
+		7042CC691A7A9C6A0024D40A /* StorytellingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042CC681A7A9C6A0024D40A /* StorytellingViewController.m */; };
+		7042CC6C1A7A9D2B0024D40A /* StorytellingInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042CC6B1A7A9D2B0024D40A /* StorytellingInfoViewController.m */; };
+		7042CC6F1A7AA5480024D40A /* ExhibitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042CC6E1A7AA5480024D40A /* ExhibitionViewController.m */; };
+		7042CC721A7AA5530024D40A /* ExhibitionInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042CC711A7AA5530024D40A /* ExhibitionInfoViewController.m */; };
+		7042CC751A7AA5640024D40A /* ExhibitionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7042CC741A7AA5640024D40A /* ExhibitionTableViewCell.m */; };
 		70CBD3FA1A71C5EE0011EDFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD3F91A71C5EE0011EDFB /* main.m */; };
 		70CBD3FD1A71C5EE0011EDFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD3FC1A71C5EE0011EDFB /* AppDelegate.m */; };
 		70CBD4001A71C5EE0011EDFB /* feverestival2015.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD3FE1A71C5EE0011EDFB /* feverestival2015.xcdatamodeld */; };
@@ -15,6 +21,40 @@
 		70CBD4081A71C5EE0011EDFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70CBD4071A71C5EE0011EDFB /* Images.xcassets */; };
 		70CBD40B1A71C5EE0011EDFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70CBD4091A71C5EE0011EDFB /* LaunchScreen.xib */; };
 		70CBD4171A71C5EE0011EDFB /* feverestival2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4161A71C5EE0011EDFB /* feverestival2015Tests.m */; };
+		70CBD4B11A7782AF0011EDFB /* MyCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4B01A7782AF0011EDFB /* MyCalendar.m */; };
+		70CBD4B81A7783A00011EDFB /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4B71A7783A00011EDFB /* Event.m */; };
+		70CBD4BC1A7785610011EDFB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4BB1A7785610011EDFB /* BaseViewController.m */; };
+		70CBD4BF1A7785770011EDFB /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4BE1A7785770011EDFB /* MenuViewController.m */; };
+		70CBD4C31A7786E90011EDFB /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4C21A7786E90011EDFB /* EventManager.m */; };
+		70CBD4CF1A7789570011EDFB /* UIColor+FEIA.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4C61A7789570011EDFB /* UIColor+FEIA.m */; };
+		70CBD4D11A7789570011EDFB /* NSDate+FEIA.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4CA1A7789570011EDFB /* NSDate+FEIA.m */; };
+		70CBD4D21A7789570011EDFB /* UIImage+FEIA.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4CC1A7789570011EDFB /* UIImage+FEIA.m */; };
+		70CBD4D31A7789570011EDFB /* UIView+FEIA.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CBD4CE1A7789570011EDFB /* UIView+FEIA.m */; };
+		70DB84361A7A1A5B00052403 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84351A7A1A5B00052403 /* AddressViewController.m */; };
+		70DB84391A7A249D00052403 /* FoodPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84381A7A249D00052403 /* FoodPlace.m */; };
+		70DB843D1A7A253700052403 /* FoodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB843C1A7A253700052403 /* FoodManager.m */; };
+		70DB843F1A7A259400052403 /* foodPlaces.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB843E1A7A259400052403 /* foodPlaces.json */; };
+		70DB84421A7A2CEF00052403 /* FoodPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84411A7A2CEF00052403 /* FoodPlaceViewController.m */; };
+		70DB84461A7A2E5400052403 /* FoodPlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84451A7A2E5400052403 /* FoodPlaceTableViewCell.m */; };
+		70DB84501A7A3D3800052403 /* childrenShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB84471A7A3D3800052403 /* childrenShow.json */; };
+		70DB84511A7A3D3800052403 /* meetingPoints.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB84481A7A3D3800052403 /* meetingPoints.json */; };
+		70DB84521A7A3D3800052403 /* pocketShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB84491A7A3D3800052403 /* pocketShow.json */; };
+		70DB84531A7A3D3800052403 /* specialShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB844A1A7A3D3800052403 /* specialShow.json */; };
+		70DB84541A7A3D3800052403 /* storytelling.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB844B1A7A3D3800052403 /* storytelling.json */; };
+		70DB84551A7A3D3800052403 /* streetShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB844C1A7A3D3800052403 /* streetShow.json */; };
+		70DB84561A7A3D3800052403 /* unicamp.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB844D1A7A3D3800052403 /* unicamp.json */; };
+		70DB84571A7A3D3800052403 /* adultShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB844E1A7A3D3800052403 /* adultShow.json */; };
+		70DB84581A7A3D3800052403 /* workshops.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DB844F1A7A3D3800052403 /* workshops.json */; };
+		70DB845B1A7A41D500052403 /* MeetingPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB845A1A7A41D500052403 /* MeetingPointViewController.m */; };
+		70DB845E1A7A41E800052403 /* MeetingPointTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB845D1A7A41E800052403 /* MeetingPointTableViewCell.m */; };
+		70DB84611A7A4C0200052403 /* WorkshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84601A7A4C0200052403 /* WorkshopViewController.m */; };
+		70DB84641A7A4C1000052403 /* WorkshopInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84631A7A4C1000052403 /* WorkshopInfoViewController.m */; };
+		70DB84671A7A4C2400052403 /* WorkshopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84661A7A4C2400052403 /* WorkshopTableViewCell.m */; };
+		70DB846A1A7A5FA200052403 /* MyCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84691A7A5FA200052403 /* MyCalendarTableViewCell.m */; };
+		70DB846D1A7A5FB200052403 /* MyCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB846C1A7A5FB200052403 /* MyCalendarViewController.m */; };
+		70DB84701A7A8BC100052403 /* SpecialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB846F1A7A8BC100052403 /* SpecialsViewController.m */; };
+		70DB84731A7A8C0E00052403 /* SpecialsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84721A7A8C0E00052403 /* SpecialsTableViewCell.m */; };
+		70DB84761A7A8C2100052403 /* SpecialsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DB84751A7A8C2100052403 /* SpecialsInfoViewController.m */; };
 		8B22168C895088715C4967FA /* libPods-feverestival2015.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB911F95D9051FBC8AFB96 /* libPods-feverestival2015.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +72,18 @@
 		3D31BDE661ABCEC7E2205696 /* Pods-feverestival2015.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feverestival2015.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feverestival2015/Pods-feverestival2015.debug.xcconfig"; sourceTree = "<group>"; };
 		4288C7F0AA3EF74B74F5F935 /* Pods-feverestival2015.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feverestival2015.release.xcconfig"; path = "Pods/Target Support Files/Pods-feverestival2015/Pods-feverestival2015.release.xcconfig"; sourceTree = "<group>"; };
 		4EAB911F95D9051FBC8AFB96 /* libPods-feverestival2015.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-feverestival2015.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7042CC641A7A9C020024D40A /* StorytellingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorytellingTableViewCell.h; sourceTree = "<group>"; };
+		7042CC651A7A9C020024D40A /* StorytellingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorytellingTableViewCell.m; sourceTree = "<group>"; };
+		7042CC671A7A9C6A0024D40A /* StorytellingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorytellingViewController.h; sourceTree = "<group>"; };
+		7042CC681A7A9C6A0024D40A /* StorytellingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorytellingViewController.m; sourceTree = "<group>"; };
+		7042CC6A1A7A9D2B0024D40A /* StorytellingInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorytellingInfoViewController.h; sourceTree = "<group>"; };
+		7042CC6B1A7A9D2B0024D40A /* StorytellingInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorytellingInfoViewController.m; sourceTree = "<group>"; };
+		7042CC6D1A7AA5480024D40A /* ExhibitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionViewController.h; sourceTree = "<group>"; };
+		7042CC6E1A7AA5480024D40A /* ExhibitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionViewController.m; sourceTree = "<group>"; };
+		7042CC701A7AA5530024D40A /* ExhibitionInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionInfoViewController.h; sourceTree = "<group>"; };
+		7042CC711A7AA5530024D40A /* ExhibitionInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionInfoViewController.m; sourceTree = "<group>"; };
+		7042CC731A7AA5640024D40A /* ExhibitionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionTableViewCell.h; sourceTree = "<group>"; };
+		7042CC741A7AA5640024D40A /* ExhibitionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionTableViewCell.m; sourceTree = "<group>"; };
 		70CBD3F41A71C5EE0011EDFB /* feverestival2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feverestival2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CBD3F81A71C5EE0011EDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70CBD3F91A71C5EE0011EDFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +98,64 @@
 		70CBD4101A71C5EE0011EDFB /* feverestival2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = feverestival2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CBD4151A71C5EE0011EDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70CBD4161A71C5EE0011EDFB /* feverestival2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = feverestival2015Tests.m; sourceTree = "<group>"; };
+		70CBD4AF1A7782AF0011EDFB /* MyCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCalendar.h; path = Model/MyCalendar.h; sourceTree = "<group>"; };
+		70CBD4B01A7782AF0011EDFB /* MyCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCalendar.m; path = Model/MyCalendar.m; sourceTree = "<group>"; };
+		70CBD4B61A7783A00011EDFB /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Model/Event.h; sourceTree = "<group>"; };
+		70CBD4B71A7783A00011EDFB /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = Model/Event.m; sourceTree = "<group>"; };
+		70CBD4BA1A7785610011EDFB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		70CBD4BB1A7785610011EDFB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		70CBD4BD1A7785770011EDFB /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		70CBD4BE1A7785770011EDFB /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		70CBD4C11A7786E90011EDFB /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		70CBD4C21A7786E90011EDFB /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		70CBD4C51A7789570011EDFB /* UIColor+FEIA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+FEIA.h"; path = "Category/UIColor+FEIA.h"; sourceTree = "<group>"; };
+		70CBD4C61A7789570011EDFB /* UIColor+FEIA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FEIA.m"; path = "Category/UIColor+FEIA.m"; sourceTree = "<group>"; };
+		70CBD4C91A7789570011EDFB /* NSDate+FEIA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+FEIA.h"; path = "Category/NSDate+FEIA.h"; sourceTree = "<group>"; };
+		70CBD4CA1A7789570011EDFB /* NSDate+FEIA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+FEIA.m"; path = "Category/NSDate+FEIA.m"; sourceTree = "<group>"; };
+		70CBD4CB1A7789570011EDFB /* UIImage+FEIA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+FEIA.h"; path = "Category/UIImage+FEIA.h"; sourceTree = "<group>"; };
+		70CBD4CC1A7789570011EDFB /* UIImage+FEIA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FEIA.m"; path = "Category/UIImage+FEIA.m"; sourceTree = "<group>"; };
+		70CBD4CD1A7789570011EDFB /* UIView+FEIA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FEIA.h"; path = "Category/UIView+FEIA.h"; sourceTree = "<group>"; };
+		70CBD4CE1A7789570011EDFB /* UIView+FEIA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FEIA.m"; path = "Category/UIView+FEIA.m"; sourceTree = "<group>"; };
+		70DB84341A7A1A5B00052403 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		70DB84351A7A1A5B00052403 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		70DB84371A7A249D00052403 /* FoodPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodPlace.h; path = Model/FoodPlace.h; sourceTree = "<group>"; };
+		70DB84381A7A249D00052403 /* FoodPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodPlace.m; path = Model/FoodPlace.m; sourceTree = "<group>"; };
+		70DB843B1A7A253700052403 /* FoodManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodManager.h; sourceTree = "<group>"; };
+		70DB843C1A7A253700052403 /* FoodManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodManager.m; sourceTree = "<group>"; };
+		70DB843E1A7A259400052403 /* foodPlaces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodPlaces.json; sourceTree = "<group>"; };
+		70DB84401A7A2CEF00052403 /* FoodPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodPlaceViewController.h; sourceTree = "<group>"; };
+		70DB84411A7A2CEF00052403 /* FoodPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodPlaceViewController.m; sourceTree = "<group>"; };
+		70DB84441A7A2E5400052403 /* FoodPlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodPlaceTableViewCell.h; sourceTree = "<group>"; };
+		70DB84451A7A2E5400052403 /* FoodPlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodPlaceTableViewCell.m; sourceTree = "<group>"; };
+		70DB84471A7A3D3800052403 /* childrenShow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = childrenShow.json; sourceTree = "<group>"; };
+		70DB84481A7A3D3800052403 /* meetingPoints.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meetingPoints.json; sourceTree = "<group>"; };
+		70DB84491A7A3D3800052403 /* pocketShow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pocketShow.json; sourceTree = "<group>"; };
+		70DB844A1A7A3D3800052403 /* specialShow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = specialShow.json; sourceTree = "<group>"; };
+		70DB844B1A7A3D3800052403 /* storytelling.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = storytelling.json; sourceTree = "<group>"; };
+		70DB844C1A7A3D3800052403 /* streetShow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = streetShow.json; sourceTree = "<group>"; };
+		70DB844D1A7A3D3800052403 /* unicamp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = unicamp.json; sourceTree = "<group>"; };
+		70DB844E1A7A3D3800052403 /* adultShow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adultShow.json; sourceTree = "<group>"; };
+		70DB844F1A7A3D3800052403 /* workshops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workshops.json; sourceTree = "<group>"; };
+		70DB84591A7A41D500052403 /* MeetingPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingPointViewController.h; sourceTree = "<group>"; };
+		70DB845A1A7A41D500052403 /* MeetingPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingPointViewController.m; sourceTree = "<group>"; };
+		70DB845C1A7A41E800052403 /* MeetingPointTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingPointTableViewCell.h; sourceTree = "<group>"; };
+		70DB845D1A7A41E800052403 /* MeetingPointTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingPointTableViewCell.m; sourceTree = "<group>"; };
+		70DB845F1A7A4C0200052403 /* WorkshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkshopViewController.h; sourceTree = "<group>"; };
+		70DB84601A7A4C0200052403 /* WorkshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkshopViewController.m; sourceTree = "<group>"; };
+		70DB84621A7A4C1000052403 /* WorkshopInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkshopInfoViewController.h; sourceTree = "<group>"; };
+		70DB84631A7A4C1000052403 /* WorkshopInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkshopInfoViewController.m; sourceTree = "<group>"; };
+		70DB84651A7A4C2400052403 /* WorkshopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkshopTableViewCell.h; sourceTree = "<group>"; };
+		70DB84661A7A4C2400052403 /* WorkshopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkshopTableViewCell.m; sourceTree = "<group>"; };
+		70DB84681A7A5FA200052403 /* MyCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalendarTableViewCell.h; sourceTree = "<group>"; };
+		70DB84691A7A5FA200052403 /* MyCalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalendarTableViewCell.m; sourceTree = "<group>"; };
+		70DB846B1A7A5FB200052403 /* MyCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalendarViewController.h; sourceTree = "<group>"; };
+		70DB846C1A7A5FB200052403 /* MyCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalendarViewController.m; sourceTree = "<group>"; };
+		70DB846E1A7A8BC100052403 /* SpecialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialsViewController.h; sourceTree = "<group>"; };
+		70DB846F1A7A8BC100052403 /* SpecialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialsViewController.m; sourceTree = "<group>"; };
+		70DB84711A7A8C0E00052403 /* SpecialsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialsTableViewCell.h; sourceTree = "<group>"; };
+		70DB84721A7A8C0E00052403 /* SpecialsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialsTableViewCell.m; sourceTree = "<group>"; };
+		70DB84741A7A8C2100052403 /* SpecialsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialsInfoViewController.h; sourceTree = "<group>"; };
+		70DB84751A7A8C2100052403 /* SpecialsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialsInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +208,11 @@
 		70CBD3F61A71C5EE0011EDFB /* feverestival2015 */ = {
 			isa = PBXGroup;
 			children = (
+				70DB843A1A7A24A500052403 /* Resources */,
+				70CBD4C41A7789420011EDFB /* Category */,
+				70CBD4C01A7786CA0011EDFB /* Managers */,
+				70CBD4B91A7784D90011EDFB /* View Controllers */,
+				70CBD4B21A7782B80011EDFB /* Model */,
 				70CBD3FB1A71C5EE0011EDFB /* AppDelegate.h */,
 				70CBD3FC1A71C5EE0011EDFB /* AppDelegate.m */,
 				70CBD4011A71C5EE0011EDFB /* ViewController.h */,
@@ -135,6 +250,119 @@
 				70CBD4151A71C5EE0011EDFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70CBD4B21A7782B80011EDFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70DB84371A7A249D00052403 /* FoodPlace.h */,
+				70DB84381A7A249D00052403 /* FoodPlace.m */,
+				70CBD4B61A7783A00011EDFB /* Event.h */,
+				70CBD4B71A7783A00011EDFB /* Event.m */,
+				70CBD4AF1A7782AF0011EDFB /* MyCalendar.h */,
+				70CBD4B01A7782AF0011EDFB /* MyCalendar.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70CBD4B91A7784D90011EDFB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70DB84341A7A1A5B00052403 /* AddressViewController.h */,
+				70DB84351A7A1A5B00052403 /* AddressViewController.m */,
+				70CBD4BA1A7785610011EDFB /* BaseViewController.h */,
+				70CBD4BB1A7785610011EDFB /* BaseViewController.m */,
+				70DB84431A7A2E3800052403 /* Cells */,
+				7042CC701A7AA5530024D40A /* ExhibitionInfoViewController.h */,
+				7042CC711A7AA5530024D40A /* ExhibitionInfoViewController.m */,
+				7042CC6D1A7AA5480024D40A /* ExhibitionViewController.h */,
+				7042CC6E1A7AA5480024D40A /* ExhibitionViewController.m */,
+				70DB84401A7A2CEF00052403 /* FoodPlaceViewController.h */,
+				70DB84411A7A2CEF00052403 /* FoodPlaceViewController.m */,
+				70DB84591A7A41D500052403 /* MeetingPointViewController.h */,
+				70DB845A1A7A41D500052403 /* MeetingPointViewController.m */,
+				70CBD4BD1A7785770011EDFB /* MenuViewController.h */,
+				70CBD4BE1A7785770011EDFB /* MenuViewController.m */,
+				70DB846B1A7A5FB200052403 /* MyCalendarViewController.h */,
+				70DB846C1A7A5FB200052403 /* MyCalendarViewController.m */,
+				70DB84741A7A8C2100052403 /* SpecialsInfoViewController.h */,
+				70DB84751A7A8C2100052403 /* SpecialsInfoViewController.m */,
+				70DB846E1A7A8BC100052403 /* SpecialsViewController.h */,
+				70DB846F1A7A8BC100052403 /* SpecialsViewController.m */,
+				7042CC6A1A7A9D2B0024D40A /* StorytellingInfoViewController.h */,
+				7042CC6B1A7A9D2B0024D40A /* StorytellingInfoViewController.m */,
+				7042CC671A7A9C6A0024D40A /* StorytellingViewController.h */,
+				7042CC681A7A9C6A0024D40A /* StorytellingViewController.m */,
+				70DB84621A7A4C1000052403 /* WorkshopInfoViewController.h */,
+				70DB84631A7A4C1000052403 /* WorkshopInfoViewController.m */,
+				70DB845F1A7A4C0200052403 /* WorkshopViewController.h */,
+				70DB84601A7A4C0200052403 /* WorkshopViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		70CBD4C01A7786CA0011EDFB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				70CBD4C11A7786E90011EDFB /* EventManager.h */,
+				70CBD4C21A7786E90011EDFB /* EventManager.m */,
+				70DB843B1A7A253700052403 /* FoodManager.h */,
+				70DB843C1A7A253700052403 /* FoodManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		70CBD4C41A7789420011EDFB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				70CBD4C51A7789570011EDFB /* UIColor+FEIA.h */,
+				70CBD4C61A7789570011EDFB /* UIColor+FEIA.m */,
+				70CBD4C91A7789570011EDFB /* NSDate+FEIA.h */,
+				70CBD4CA1A7789570011EDFB /* NSDate+FEIA.m */,
+				70CBD4CB1A7789570011EDFB /* UIImage+FEIA.h */,
+				70CBD4CC1A7789570011EDFB /* UIImage+FEIA.m */,
+				70CBD4CD1A7789570011EDFB /* UIView+FEIA.h */,
+				70CBD4CE1A7789570011EDFB /* UIView+FEIA.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		70DB843A1A7A24A500052403 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70DB84471A7A3D3800052403 /* childrenShow.json */,
+				70DB84481A7A3D3800052403 /* meetingPoints.json */,
+				70DB84491A7A3D3800052403 /* pocketShow.json */,
+				70DB844A1A7A3D3800052403 /* specialShow.json */,
+				70DB844B1A7A3D3800052403 /* storytelling.json */,
+				70DB844C1A7A3D3800052403 /* streetShow.json */,
+				70DB844D1A7A3D3800052403 /* unicamp.json */,
+				70DB844E1A7A3D3800052403 /* adultShow.json */,
+				70DB844F1A7A3D3800052403 /* workshops.json */,
+				70DB843E1A7A259400052403 /* foodPlaces.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		70DB84431A7A2E3800052403 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				70DB84441A7A2E5400052403 /* FoodPlaceTableViewCell.h */,
+				70DB84451A7A2E5400052403 /* FoodPlaceTableViewCell.m */,
+				70DB845C1A7A41E800052403 /* MeetingPointTableViewCell.h */,
+				70DB845D1A7A41E800052403 /* MeetingPointTableViewCell.m */,
+				70DB84681A7A5FA200052403 /* MyCalendarTableViewCell.h */,
+				70DB84691A7A5FA200052403 /* MyCalendarTableViewCell.m */,
+				70DB84651A7A4C2400052403 /* WorkshopTableViewCell.h */,
+				70DB84661A7A4C2400052403 /* WorkshopTableViewCell.m */,
+				70DB84711A7A8C0E00052403 /* SpecialsTableViewCell.h */,
+				70DB84721A7A8C0E00052403 /* SpecialsTableViewCell.m */,
+				7042CC641A7A9C020024D40A /* StorytellingTableViewCell.h */,
+				7042CC651A7A9C020024D40A /* StorytellingTableViewCell.m */,
+				7042CC731A7AA5640024D40A /* ExhibitionTableViewCell.h */,
+				7042CC741A7AA5640024D40A /* ExhibitionTableViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		CACE889F2C47917EE9E7B2FB /* Pods */ = {
@@ -197,6 +425,7 @@
 				TargetAttributes = {
 					70CBD3F31A71C5EE0011EDFB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 57X628MP2X;
 					};
 					70CBD40F1A71C5EE0011EDFB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -228,9 +457,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DB84501A7A3D3800052403 /* childrenShow.json in Resources */,
+				70DB84551A7A3D3800052403 /* streetShow.json in Resources */,
 				70CBD4061A71C5EE0011EDFB /* Main.storyboard in Resources */,
+				70DB84561A7A3D3800052403 /* unicamp.json in Resources */,
+				70DB84531A7A3D3800052403 /* specialShow.json in Resources */,
+				70DB84571A7A3D3800052403 /* adultShow.json in Resources */,
+				70DB84511A7A3D3800052403 /* meetingPoints.json in Resources */,
+				70DB84581A7A3D3800052403 /* workshops.json in Resources */,
 				70CBD40B1A71C5EE0011EDFB /* LaunchScreen.xib in Resources */,
+				70DB84521A7A3D3800052403 /* pocketShow.json in Resources */,
 				70CBD4081A71C5EE0011EDFB /* Images.xcassets in Resources */,
+				70DB843F1A7A259400052403 /* foodPlaces.json in Resources */,
+				70DB84541A7A3D3800052403 /* storytelling.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +520,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DB845E1A7A41E800052403 /* MeetingPointTableViewCell.m in Sources */,
+				7042CC721A7AA5530024D40A /* ExhibitionInfoViewController.m in Sources */,
+				70CBD4B81A7783A00011EDFB /* Event.m in Sources */,
+				70DB84671A7A4C2400052403 /* WorkshopTableViewCell.m in Sources */,
+				70DB84361A7A1A5B00052403 /* AddressViewController.m in Sources */,
+				70DB84701A7A8BC100052403 /* SpecialsViewController.m in Sources */,
+				70DB84611A7A4C0200052403 /* WorkshopViewController.m in Sources */,
+				70CBD4D31A7789570011EDFB /* UIView+FEIA.m in Sources */,
+				7042CC6F1A7AA5480024D40A /* ExhibitionViewController.m in Sources */,
 				70CBD3FD1A71C5EE0011EDFB /* AppDelegate.m in Sources */,
 				70CBD3FA1A71C5EE0011EDFB /* main.m in Sources */,
+				70CBD4BF1A7785770011EDFB /* MenuViewController.m in Sources */,
+				7042CC751A7AA5640024D40A /* ExhibitionTableViewCell.m in Sources */,
+				7042CC691A7A9C6A0024D40A /* StorytellingViewController.m in Sources */,
+				7042CC661A7A9C020024D40A /* StorytellingTableViewCell.m in Sources */,
+				70CBD4CF1A7789570011EDFB /* UIColor+FEIA.m in Sources */,
+				70DB845B1A7A41D500052403 /* MeetingPointViewController.m in Sources */,
+				70DB84731A7A8C0E00052403 /* SpecialsTableViewCell.m in Sources */,
 				70CBD4031A71C5EE0011EDFB /* ViewController.m in Sources */,
+				7042CC6C1A7A9D2B0024D40A /* StorytellingInfoViewController.m in Sources */,
+				70DB84761A7A8C2100052403 /* SpecialsInfoViewController.m in Sources */,
 				70CBD4001A71C5EE0011EDFB /* feverestival2015.xcdatamodeld in Sources */,
+				70CBD4BC1A7785610011EDFB /* BaseViewController.m in Sources */,
+				70DB84391A7A249D00052403 /* FoodPlace.m in Sources */,
+				70DB846A1A7A5FA200052403 /* MyCalendarTableViewCell.m in Sources */,
+				70DB843D1A7A253700052403 /* FoodManager.m in Sources */,
+				70CBD4D21A7789570011EDFB /* UIImage+FEIA.m in Sources */,
+				70CBD4B11A7782AF0011EDFB /* MyCalendar.m in Sources */,
+				70DB84641A7A4C1000052403 /* WorkshopInfoViewController.m in Sources */,
+				70CBD4C31A7786E90011EDFB /* EventManager.m in Sources */,
+				70CBD4D11A7789570011EDFB /* NSDate+FEIA.m in Sources */,
+				70DB846D1A7A5FB200052403 /* MyCalendarViewController.m in Sources */,
+				70DB84421A7A2CEF00052403 /* FoodPlaceViewController.m in Sources */,
+				70DB84461A7A2E5400052403 /* FoodPlaceTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +677,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D31BDE661ABCEC7E2205696 /* Pods-feverestival2015.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = FeverIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = feverestival2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,7 +689,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4288C7F0AA3EF74B74F5F935 /* Pods-feverestival2015.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = FeverIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = feverestival2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

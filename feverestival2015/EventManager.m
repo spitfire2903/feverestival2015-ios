@@ -771,7 +771,8 @@
                     }
 
                     event.place = [object valueForKey:@"place"];
-                    event.summary = [object valueForKey:@"promotion"];
+                    //event.summary = [object valueForKey:@"promotion"];
+                    event.summary = [object valueForKey:@"summary"];
                     event.sheet = [object valueForKey:@"sheet"];
 
                     event.duration = [object valueForKey:@"duration"];
