@@ -2823,8 +2823,8 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">Apoio: Secretaria de Acessibilidade, Almanaque Café, Bagdá Cozinha Árabe, Casa São Jorge, Café e Padaria Barão Francês, Chica da Pizza, Chopp do Fritz – Barão Geraldo, Entremanos Bar e Restaurante, Raízes Zen Alimentos Vegetarianos, Andanças Gourmet Bar e Restaurante, Bar do Jair, Panetteria di Capri, Canto do Acarajé, Valise de Cronópio, Banca Central, Borda Brasil, Echos Studio Bar, La Terrine Confort Food, Praça do Coco, Varanda da Vila, Vitalidade Restaurante e Café.
- </string>
+                                                <mutableString key="content">Apoio: Secretaria de Acessibilidade, Almanaque Café, Bagdá Cozinha Árabe, Casa São Jorge, Café e Padaria Barão Francês, Chica da Pizza, Chopp do Fritz – Barão Geraldo, Entremanos Bar e Restaurante, Raízes Zen Alimentos Vegetarianos, Andanças Gourmet Bar e Restaurante, Bar do Jair, Panetteria di Capri, Canto do Acarajé, Valise de Cronópio, Banca Central, Borda Brasil, Echos Studio Bar, La Terrine Confort Food, Praça do Coco, Varanda da Vila, Vitalidade Restaurante e Café.
+ </mutableString>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>
@@ -2879,12 +2879,12 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">
+                                                <mutableString key="content">
 Agradecemos a todos inscritos no edital, que garantiram a importância do festival. 
 Ao Bruno Pregnolatto, Theo Ferreira Pregnolatto, Fabio Rizza e Francisco Barganian.
 Aos companheiros do Lume Teatro e do Grupo Matula Teatro.
 Aos professores e aos alunos do Instituto de Artes da UNICAMP.
-</string>
+</mutableString>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>

@@ -38,4 +38,6 @@
 
 +(NSArray*)myCalendarEvents;
 
++(void)fixEvents;
+
 @end

@@ -47,6 +47,8 @@ NSString* const CALENDAR_ENTITY = @"MyCalendar";
     [EventManager generateStorytellings];
     [EventManager generateExhibition];
     
+    [EventManager fixEvents];
+    
     return YES;
 }
 

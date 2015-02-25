@@ -141,7 +141,9 @@
     Event* event = nil;
     NSDateFormatter* formatter = nil;
     
-    if (![self meetingPoints]) {
+    //if (![self meetingPoints]) {
+    [self clearMeetingPoints];
+    
         appDelegate = [[UIApplication sharedApplication] delegate];
         
         context = [appDelegate managedObjectContext];
@@ -193,7 +195,7 @@
             }
         }
         
-    }
+    //}
     
     return result;
 }
@@ -983,6 +985,49 @@
     events = [events sortedArrayUsingDescriptors:@[dateDescr, timeDescr]];
     
     return ([events count] > 0 ? events : nil);
+}
+
+#pragma mark - POG
+
++(void)fixEvents{
+    AppDelegate *appDelegate = nil;
+    NSManagedObjectContext *context = nil;
+    NSError* error = nil;
+    NSDateFormatter* formatter = nil;
+    
+    appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    context = [appDelegate managedObjectContext];
+    
+    formatter = [[NSDateFormatter alloc] init];
+    
+    for (Event* e in [self eventsByEventType:EVENT_TYPE_EXHIBITION]) {
+        if ([e.name containsString:@"Sala de Banho"]) {
+            if ([e.place containsString:@"Terminal"]) {
+                e.place = @"Terminal Barão Geraldo";
+            } else{
+                e.place = @"Coreto da Praça Castro Mendes";
+            }
+            
+            [context save:&error];
+        }
+    }
+    
+    for (Event* e in [self eventsByEventType:EVENT_TYPE_SPECIAL]) {
+        if ([e.name containsString:@"Quem com porcos se mistura"]) {
+            e.name = @"Quem com porcos se mistura, farelo come, Grupo VÃO (São Paulo/SP)";
+            
+            [context save:&error];
+            
+        } else if ([e.name containsString:@"A natureza da vida"]){
+            [formatter setDateFormat:@"HH:mm"];
+            
+            e.time = [formatter dateFromString:@"17:30"];
+            e.place = @"Ciclo Básico Unicamp";
+            
+            [context save:&error];
+        }
+    }
 }
 
 @end
